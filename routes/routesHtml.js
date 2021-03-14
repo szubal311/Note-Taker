@@ -5,10 +5,6 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
-    app.get("/styles", (req, res) => {
-        res.sendFile(path.join(__dirname, "../public/css/style.css"));
-    });
-
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/index.html"));
     });

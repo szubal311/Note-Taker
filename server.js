@@ -1,8 +1,8 @@
 const express = require("express");
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3030;
 const app = express();
 
-app.use(expres.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static('public'));
 
